@@ -9,7 +9,7 @@ public class JoiningThreads {
     public static void main(String[] args) throws InterruptedException {
         List<Long> inputNumbers = Arrays.asList(100000000L, 3435L, 35435L, 2324L, 4656L, 23L, 5556L);
 
-        List<FactorialThread> threads = new ArrayList<>();
+        ArrayList<FactorialThread> threads = new ArrayList<>(); // This line is changed
 
         for (long inputNumber : inputNumbers) {
             threads.add(new FactorialThread(inputNumber));
@@ -65,5 +65,7 @@ public class JoiningThreads {
         public boolean isFinished() {
             return isFinished;
         }
+
+
     }
 }
