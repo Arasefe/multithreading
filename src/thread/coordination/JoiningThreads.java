@@ -1,5 +1,6 @@
 package thread.coordination;
 
+
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,7 +11,6 @@ public class JoiningThreads {
         List<Long> inputNumbers = Arrays.asList(100000000L, 3435L, 35435L, 2324L, 4656L, 23L, 5556L);
 
         ArrayList<FactorialThread> threads = new ArrayList<>(); // This line is changed
-
         for (long inputNumber : inputNumbers) {
             threads.add(new FactorialThread(inputNumber));
         }
