@@ -5,4 +5,8 @@ public class StudyGitPR2 {
         System.out.println("This is second commit");
         System.out.println("This is third commit");
     }
+
+    public static void method(){
+        System.out.println("This is from the Contributer");
+    }
 }
